@@ -1,0 +1,19 @@
+[gd_scene load_steps=10 format=3 uid="uid://yveii6cadway"]
+
+[ext_resource type="PackedScene" uid="uid://dsc0irbvvbjyd" path="res://column.tscn" id="1_hsl4e"]
+[ext_resource type="Script" path="res://GameManager.gd" id="3_88wls"]
+[ext_resource type="Texture2D" uid="uid://br4sem1x1a2m" path="res://Textures/Flowers/BlueFlower.png" id="3_voh7g"]
+[ext_resource type="Texture2D" uid="uid://dkc2wt6pu3lvh" path="res://Textures/Flowers/Daisy.png" id="4_wowb2"]
+[ext_resource type="Texture2D" uid="uid://bs0rfhv8gvehq" path="res://Textures/Flowers/OrangeFlower.png" id="5_rpywi"]
+[ext_resource type="Texture2D" uid="uid://4nphflbm3voq" path="res://Textures/Flowers/PinkFlower.png" id="6_151mi"]
+[ext_resource type="Texture2D" uid="uid://dnkyvx8q8v32f" path="res://Textures/Flowers/Rose.png" id="7_gtr1m"]
+[ext_resource type="Texture2D" uid="uid://dfi6ymbgkpgnk" path="res://Textures/Flowers/Sunflower.png" id="8_ww2js"]
+[ext_resource type="Texture2D" uid="uid://bixnfvve6gqli" path="res://Textures/Flowers/Tulip.png" id="9_rf4dv"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("3_88wls")
+column = ExtResource("1_hsl4e")
+flowers = Array[Texture2D]([ExtResource("3_voh7g"), ExtResource("4_wowb2"), ExtResource("5_rpywi"), ExtResource("6_151mi"), ExtResource("7_gtr1m"), ExtResource("8_ww2js"), ExtResource("9_rf4dv")])
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0

@@ -11,9 +11,18 @@ config_version=5
 [application]
 
 config/name="ColorSorting"
+run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_width"
 
 [rendering]
 
 renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0.0386653, 0.148463, 0.0680631, 1)

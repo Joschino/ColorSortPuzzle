@@ -1,0 +1,13 @@
+[gd_scene load_steps=5 format=3 uid="uid://dsc0irbvvbjyd"]
+
+[ext_resource type="Script" path="res://column.gd" id="1_a2mgc"]
+[ext_resource type="Texture2D" uid="uid://b0yia4xya7xyd" path="res://Textures/Column/ColumnTop.png" id="2_1rj6n"]
+[ext_resource type="Texture2D" uid="uid://bec8gdpqocxfl" path="res://Textures/Column/ColumnMiddle.png" id="3_cj4tp"]
+[ext_resource type="Texture2D" uid="uid://bkc6hibbeetx6" path="res://Textures/Column/Columnbottom.png" id="4_mfww4"]
+
+[node name="Column" type="Node2D"]
+z_index = 10
+script = ExtResource("1_a2mgc")
+columnTop = ExtResource("2_1rj6n")
+columMiddle = ExtResource("3_cj4tp")
+columnBottom = ExtResource("4_mfww4")
