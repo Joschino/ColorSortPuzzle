@@ -8,6 +8,7 @@
 [node name="Column" type="Node2D"]
 z_index = 10
 script = ExtResource("1_a2mgc")
+size = 2
 columnTop = ExtResource("2_1rj6n")
 columMiddle = ExtResource("3_cj4tp")
 columnBottom = ExtResource("4_mfww4")
