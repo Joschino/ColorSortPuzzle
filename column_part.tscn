@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://385bck4whpp"]
+
+[ext_resource type="Script" path="res://ColumnPart.gd" id="1_hxsb2"]
+
+[node name="ColumnPart" type="Area2D"]
+script = ExtResource("1_hxsb2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(76, -124.8, 79.4, -121.5, 78.3, -119, 76.8, -119, 75, -117.2, 75, 128, -75, 128, -75, -116.2, -79, -120.2, -79, -123.1, -76, -125.1, -76, -128, 76, -128)
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://yveii6cadway"]
+[gd_scene load_steps=12 format=3 uid="uid://yveii6cadway"]
 
 [ext_resource type="PackedScene" uid="uid://dsc0irbvvbjyd" path="res://column.tscn" id="1_hsl4e"]
 [ext_resource type="Script" path="res://GameManager.gd" id="3_88wls"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dfi6ymbgkpgnk" path="res://Textures/Flowers/Sunflower.png" id="8_ww2js"]
 [ext_resource type="Texture2D" uid="uid://bixnfvve6gqli" path="res://Textures/Flowers/Tulip.png" id="9_rf4dv"]
 [ext_resource type="PackedScene" uid="uid://dvurehfj3w1ma" path="res://flower.tscn" id="10_gqdc2"]
+[ext_resource type="PackedScene" uid="uid://b8oqng8httnj8" path="res://game_ui.tscn" id="11_ol0r7"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("3_88wls")
@@ -20,3 +21,12 @@ flowerScene = ExtResource("10_gqdc2")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(609, 600)
+scale = Vector2(0.5, 0.5)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GameUI" parent="CanvasLayer" instance=ExtResource("11_ol0r7")]
+visible = false
